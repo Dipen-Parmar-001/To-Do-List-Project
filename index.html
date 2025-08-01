@@ -1,0 +1,30 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="outerBox">
+
+  <div id="task-form" class="form-container">
+    <h3 id="form-title">Add New Task</h3>
+    <input type="text" id="task-title" placeholder="Task Title">
+    <textarea id="task-desc" placeholder="Task Description"></textarea>
+    <button onclick="saveTask()" id="save">Save</button>
+  </div>
+
+  <div id="task-summary">
+    <span id="completed-count" style="color: green;">Completed: 0</span> |
+    <span id="incomplete-count" style="color: red;">Incomplete: 0</span>
+  </div>
+
+  <ul id="task-list"></ul>
+  
+  <button onclick="showForm()" id="add-button" class="add-btn">+</button>
+  
+  </div>
+  <script src="script.js"></script>
+
+
+
+</body></html>
